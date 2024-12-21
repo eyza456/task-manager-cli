@@ -1,0 +1,62 @@
+# Task Manager CLI
+
+A simple command-line interface (CLI) application to manage your tasks and to-do list. This project helps you practice programming skills, including file system operations, user input handling, and creating a basic CLI application.
+
+## Features
+
+- Add, update, and delete tasks
+- Mark tasks as "in-progress" or "done"
+- List all tasks
+- List tasks by status (todo, in-progress, done)
+
+## Requirements
+
+- Python 3.x
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/eyza456/task-manager-cli.git
+   cd task-manager-cli
+
+
+##Usage
+Run the script with the desired command and options:
+
+#Adding a new task
+python task_manager.py add "Buy groceries"
+
+#Updating a task
+python task_manager.py update 1 "Buy groceries and cook dinner"
+
+#Deleting a task
+python task_manager.py delete 1
+
+#Marking a task as in-progress
+python task_manager.py mark-in-progress 1
+
+#Marking a task as done
+python task_manager.py mark-done 1
+
+#Listing all tasks
+python task_manager.py list
+
+#Listing tasks by status
+python task_manager.py list todo
+python task_manager.py list in-progress
+python task_manager.py list done
+
+
+##Task Properties
+Each task has the following properties:
+
+id: A unique identifier for the task
+
+description: A short description of the task
+
+status: The status of the task (todo, in-progress, done)
+
+createdAt: The date and time when the task was created
+
+updatedAt: The date and time when the task was last updated
